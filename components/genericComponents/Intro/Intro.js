@@ -6,7 +6,6 @@ import {RichTextToHTML} from "../../../functions/storyBlokRichTextRenderer";
 export default function Intro( {blok} ) {
 	return (
 			<div {...storyblokEditable(blok)} className={[css["intro"]].join(" ")}>
-				test
 				{RichTextToHTML({document: blok.intro, textClassName: css["intro__text"]})}
 			</div>
 	);
