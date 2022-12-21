@@ -23,13 +23,13 @@ export default class Teacher extends Component {
 					<div className={css["teacher-page__main-content"]}>
 						<div id="teacher-page__short-description" key="teacher-page__short-description" className={css["teacher-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
-								<h2 className={css["rich-text-section__title"]}>My Life</h2>
+								<h2 className={css["rich-text-section__title"]}>Get to know the artist!</h2>
 								<div className={css["rich-text-section__rich-text"]}>{RichTextToHTML({ document: this.props.blok.bio })}</div>
 							</section>
 						</div>
 						<div id="teacher-page__short-description" key="teacher-page__short-description" className={css["teacher-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
-							<h2 className={css["rich-text-section__title"]}>Experience</h2>
+							<h2 className={css["rich-text-section__title"]}></h2>
 								{this.props.blok.experiences && this.props.blok.experiences.map((nestedBlok) => (
 									<StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
 								))}
