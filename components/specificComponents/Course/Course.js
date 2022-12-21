@@ -6,6 +6,7 @@ import TeacherCard from "../TeacherCard/TeacherCard";
 import Element from "../../genericComponents/Element/Element";
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 import { RichTextToHTML } from "../../../functions/storyBlokRichTextRenderer";
+"dag";
 
 export default class Course extends Component {
 
