@@ -4,6 +4,7 @@ import Headermenu from "../../genericComponents/Headermenu/Headermenu";
 import Hero from "../../genericComponents/Hero/Hero";
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 import { RichTextToHTML } from "../../../functions/storyBlokRichTextRenderer";
+import Element from "../../genericComponents/Element/Element";
 
 export default class Teacher extends Component {
 
@@ -32,6 +33,14 @@ export default class Teacher extends Component {
 							<h2 className={css["rich-text-section__title"]}></h2>
 								{this.props.blok.experiences && this.props.blok.experiences.map((nestedBlok) => (
 									<StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+								))}
+							</section>
+						</div>
+						<div id="teacher-page__short-description" key="teacher-page__short-description" className={css["teacher-page__short-description"]}>
+							<section className={css["rich-text-section--with-navigator"]}>
+							<h2 className={css["rich-text-section__title"]}></h2>
+								{this.props.blok.genre && this.props.blok.genre.map((nestedBlok) => (
+									<Element blok={nestedBlok} key={nestedBlok._uid} />
 								))}
 							</section>
 						</div>
