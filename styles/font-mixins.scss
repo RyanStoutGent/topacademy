@@ -3,12 +3,12 @@
 
 /* ========== Titles ========== */
 
-@mixin main-title-font($color: $color-default) {
-  font-family: "Silkscreen", sans-serif !important;
+@mixin main-title-font($color: $color-red-normal) {
+  font-family: "Atlas Grotesk", sans-serif !important;
   font-weight: 800 !important;
   font-size: 38px !important;
   line-height: 44px !important;
-  color: $color;
+  color: $color-red-normal !important;
 
   @media only screen and (min-width: 800px) {
     font-size: 46px !important;
@@ -372,3 +372,4 @@
   line-height: 26px;
   color: $color;
 }
+
