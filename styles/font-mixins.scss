@@ -41,11 +41,11 @@
 }
 
 @mixin title-font($color: $color-default) {
-  font-family: "Silkscreen", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 800;
   font-size: 28px;
   line-height: 34px;
-  color: $color;
+  color: $color-purple-normal !important;
 
   @media only screen and (min-width: 800px) {
     font-size: 35px;
@@ -78,11 +78,11 @@
 
 
 @mixin very-small-title-font($color: $color-default) {
-  font-family: "Silkscreen", sans-serif;
+  font-family: Times 'Times New Roman', Times, serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 28px;
-  color: $color;
+  color: $color-yellow-normal !important;
 
   @media only screen and (min-width: 800px) {
     font-size: 19px;
