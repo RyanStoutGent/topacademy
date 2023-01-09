@@ -15,7 +15,8 @@ export default function Page({ story, preview, socialtags, menu }) {
       "course.locations",
       "list.elements",
       "person.genre",
-      "lineupitem.locations"
+      "lineupitem.locations",
+      "person.lineupitem"
     ]
   }, preview);
 
@@ -44,7 +45,8 @@ export async function getStaticProps({ params }) {
       "person.genre",
       "course.locations",
       "list.elements",
-      "lineupitem.locations"
+      "lineupitem.locations",
+      "person.lineupitem"
     ]
   };
 

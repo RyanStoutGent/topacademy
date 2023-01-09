@@ -38,8 +38,16 @@ export default class Teacher extends Component {
 						</div>
 						<div id="teacher-page__short-description" key="teacher-page__short-description" className={css["teacher-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
-							<h2 className={css["rich-text-section__title"]}></h2>
+							<h2 className={css["rich-text-section__title"]}>The genre of this artist</h2>
 								{this.props.blok.genre && this.props.blok.genre.map((nestedBlok) => (
+									<Element blok={nestedBlok} key={nestedBlok._uid} />
+								))}
+							</section>
+						</div>
+						<div id="teacher-page__short-description" key="teacher-page__short-description" className={css["teacher-page__short-description"]}>
+							<section className={css["rich-text-section--with-navigator"]}>
+							<h2 className={css["rich-text-section__title"]}>Time and place of this artist</h2>
+								{this.props.blok.lineupitem && this.props.blok.lineupitem.map((nestedBlok) => (
 									<Element blok={nestedBlok} key={nestedBlok._uid} />
 								))}
 							</section>
