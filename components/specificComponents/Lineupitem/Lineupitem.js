@@ -37,8 +37,14 @@ export default class Lineupitem extends Component {
 					<div className={css["location__main-content"]}>
 						<div id="location__short-description" key="location__short-description" className={css["location__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
-								<h2 className={css["rich-text-section__title"]}>About this location:</h2>
+								<h2 className={css["rich-text-section__title"]}>Time of performance</h2>
 								<div className={css["rich-text-section__rich-text"]}>{RichTextToHTML({ document: this.props.blok.description })}</div>
+							</section>
+						</div>
+						<div id="location__short-description" key="location__short-description" className={css["location__short-description"]}>
+							<section className={css["rich-text-section--with-navigator"]}>
+								<h2 className={css["rich-text-section__title"]}>Place of performance</h2>
+								<div className={css["rich-text-section__rich-text"]}>{RichTextToHTML({ document: this.props.blok.descriptionplace })}</div>
 							</section>
 						</div>
 					</div>
